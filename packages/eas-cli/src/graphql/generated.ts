@@ -4091,6 +4091,40 @@ export type GoogleServiceAccountKeyByAccountQuery = (
   ) }
 );
 
+export type CreateAppStoreConnectApiKeyMutationVariables = Exact<{
+  appStoreConnectApiKeyInput: AppStoreConnectApiKeyInput;
+  accountId: Scalars['ID'];
+}>;
+
+
+export type CreateAppStoreConnectApiKeyMutation = (
+  { __typename?: 'RootMutation' }
+  & { appStoreConnectApiKey: (
+    { __typename?: 'AppStoreConnectApiKeyMutation' }
+    & { createAppStoreConnectApiKey: (
+      { __typename?: 'AppStoreConnectApiKey' }
+      & Pick<AppStoreConnectApiKey, 'id'>
+      & AppStoreConnectApiKeyFragment
+    ) }
+  ) }
+);
+
+export type DeleteAppStoreConnectApiKeyMutationVariables = Exact<{
+  appStoreConnectApiKeyId: Scalars['ID'];
+}>;
+
+
+export type DeleteAppStoreConnectApiKeyMutation = (
+  { __typename?: 'RootMutation' }
+  & { appStoreConnectApiKey: (
+    { __typename?: 'AppStoreConnectApiKeyMutation' }
+    & { deleteAppStoreConnectApiKey: (
+      { __typename?: 'deleteAppStoreConnectApiKeyResult' }
+      & Pick<DeleteAppStoreConnectApiKeyResult, 'id'>
+    ) }
+  ) }
+);
+
 export type CreateAppleAppIdentifierMutationVariables = Exact<{
   appleAppIdentifierInput: AppleAppIdentifierInput;
   accountId: Scalars['ID'];
@@ -4387,6 +4421,24 @@ export type SetPushKeyMutation = (
   & { iosAppCredentials: (
     { __typename?: 'IosAppCredentialsMutation' }
     & { setPushKey: (
+      { __typename?: 'IosAppCredentials' }
+      & Pick<IosAppCredentials, 'id'>
+      & CommonIosAppCredentialsFragment
+    ) }
+  ) }
+);
+
+export type SetAppStoreConnectApiKeyForSubmissionsMutationVariables = Exact<{
+  iosAppCredentialsId: Scalars['ID'];
+  ascApiKeyId: Scalars['ID'];
+}>;
+
+
+export type SetAppStoreConnectApiKeyForSubmissionsMutation = (
+  { __typename?: 'RootMutation' }
+  & { iosAppCredentials: (
+    { __typename?: 'IosAppCredentialsMutation' }
+    & { setAppStoreConnectApiKeyForSubmissions: (
       { __typename?: 'IosAppCredentials' }
       & Pick<IosAppCredentials, 'id'>
       & CommonIosAppCredentialsFragment
