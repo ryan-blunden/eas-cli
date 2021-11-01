@@ -8,6 +8,8 @@ This is the log of notable changes to EAS CLI and related packages.
 
 ### 🎉 New features
 
+- Allow users to assign an ASC Api Key to their project. ([#719](https://github.com/expo/eas-cli/pull/719) by [@quinlanj](https://github.com/quinlanj))
+
 ### 🐛 Bug fixes
 
 ### 🧹 Chores
