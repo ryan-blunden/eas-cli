@@ -8,6 +8,8 @@ This is the log of notable changes to EAS CLI and related packages.
 
 ### 🎉 New features
 
+- Add support for removal of App Store Connect Api Keys. ([#721](https://github.com/expo/eas-cli/pull/721) by [@quinlanj](https://github.com/quinlanj))
+
 ### 🐛 Bug fixes
 
 ### 🧹 Chores
